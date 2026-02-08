@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 import Header from '../components/layout/Header';
-import PageLoader from '../components/layout/PageLoader';
+
 import Hero from '../components/sections/Hero';
 import CallbackBanner from '../components/sections/CallbackBanner';
 import CategoryCard from '../components/ui/CategoryCard';
@@ -11,15 +11,9 @@ import ProductCard from '../components/ui/ProductCard';
 const Home = () => {
     const { t } = useTranslation();
     const navigate = useNavigate();
-    const [loading, setLoading] = useState(true);
 
-    useEffect(() => {
-        // Simulate initial loading for the water fill effect
-        const timer = setTimeout(() => setLoading(false), 2500);
-        return () => clearTimeout(timer);
-    }, []);
 
-    if (loading) return <PageLoader />;
+
 
     const categories = [
         {
@@ -110,14 +104,6 @@ const Home = () => {
             <div className="px-4 pb-4">
                 <div className="flex items-center justify-between mb-4">
                     <h3 className="text-lg font-bold text-gray-900 dark:text-white">{t('home.featured.title')}</h3>
-                    <div className="flex gap-2">
-                        <button className="flex h-8 w-8 items-center justify-center rounded-full border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-400 dark:text-gray-500 hover:text-primary transition-colors">
-                            <span className="material-symbols-outlined text-[16px]">arrow_back</span>
-                        </button>
-                        <button className="flex h-8 w-8 items-center justify-center rounded-full border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-white hover:text-primary transition-colors">
-                            <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
-                        </button>
-                    </div>
                 </div>
 
                 <div className="flex gap-4 overflow-x-auto no-scrollbar pb-2 -mx-4 px-4 snap-x">
@@ -125,7 +111,8 @@ const Home = () => {
                         <ProductCard
                             key={product.id}
                             {...product}
-                            onAdd={() => console.log('Add to cart', product.id)}
+                            onClick={() => navigate(`/product/${product.id}`)}
+                            onAdd={() => navigate('/cart')}
                         />
                     ))}
                 </div>

@@ -1,9 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const ProductCard = ({ title, price, category, image, isHot, isDiscount, flag, onAdd }) => {
+const ProductCard = ({ title, price, category, image, isHot, isDiscount, flag, onAdd, onClick }) => {
     return (
-        <div className="min-w-[160px] max-w-[160px] snap-center flex-col gap-3 rounded-lg border border-gray-100 bg-white p-3 shadow-sm dark:border-gray-800 dark:bg-gray-900 group hover:shadow-md transition-all">
+        <div
+            onClick={onClick}
+            className="min-w-[160px] max-w-[160px] snap-center flex-col gap-3 rounded-lg border border-gray-100 bg-white p-3 shadow-sm dark:border-gray-800 dark:bg-gray-900 group hover:shadow-md transition-all cursor-pointer"
+        >
             <div className="relative aspect-square w-full overflow-hidden rounded-md bg-gray-50 dark:bg-gray-800">
                 {isHot && (
                     <div className="absolute top-2 left-2 z-10 rounded bg-red-500 px-1.5 py-0.5 text-[10px] font-bold text-white">HOT</div>

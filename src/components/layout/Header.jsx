@@ -38,7 +38,10 @@ const Header = ({ title, showBack = false, rightAction }) => {
 
             <div className="flex items-center gap-2 justify-end min-w-[40px]">
                 {rightAction || (
-                    <button className="relative flex items-center justify-center w-10 h-10 -mr-2 rounded-full text-slate-900 dark:text-white hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+                    <button
+                        onClick={() => navigate('/cart')}
+                        className="relative flex items-center justify-center w-10 h-10 -mr-2 rounded-full text-slate-900 dark:text-white hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+                    >
                         <span className="material-symbols-outlined">shopping_cart</span>
                         <span className="absolute top-2 right-2 flex h-2.5 w-2.5 items-center justify-center rounded-full bg-red-500 ring-2 ring-white dark:ring-background-dark"></span>
                     </button>

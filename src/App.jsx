@@ -1,7 +1,7 @@
 import React, { Suspense, lazy } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import MainLayout from './components/layout/MainLayout';
-import PageLoader from './components/layout/PageLoader';
+
 
 // Lazy load pages
 const Home = lazy(() => import('./pages/Home'));
@@ -22,7 +22,7 @@ const NotFound = lazy(() => import('./pages/NotFound'));
 const App = () => {
   return (
     <BrowserRouter>
-      <Suspense fallback={<PageLoader />}>
+      <Suspense fallback={null}>
         <Routes>
           <Route path="/" element={<MainLayout />}>
             <Route index element={<Home />} />
