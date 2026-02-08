@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Aquamax Home Screen</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        /* Hide scrollbar for IE, Edge and Firefox */
+        .no-scrollbar {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display antialiased">
+<!-- Main Container -->
+<div class="relative mx-auto flex h-full min-h-screen w-full max-w-[480px] flex-col overflow-x-hidden bg-white dark:bg-background-dark shadow-2xl">
+<!-- Top App Bar -->
+<header class="sticky top-0 z-50 flex items-center justify-between bg-white/90 px-5 py-3 backdrop-blur-md dark:bg-background-dark/90 border-b border-gray-100 dark:border-gray-800">
+<div class="flex items-center gap-3">
+<button class="flex items-center text-gray-900 dark:text-white hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[28px]">menu</span>
+</button>
+</div>
+<div class="flex flex-1 justify-center">
+<h1 class="text-xl font-extrabold tracking-tight text-primary">Aquamax</h1>
+</div>
+<div class="flex items-center gap-3">
+<button class="flex items-center text-gray-900 dark:text-white hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[24px]">search</span>
+</button>
+<button class="flex items-center text-gray-900 dark:text-white hover:text-primary transition-colors relative">
+<span class="material-symbols-outlined text-[24px]">shopping_cart</span>
+<span class="absolute -top-1 -right-1 flex h-4 w-4 items-center justify-center rounded-full bg-red-500 text-[10px] font-bold text-white">2</span>
+</button>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-1 pb-24">
+<!-- Hero Section -->
+<div class="px-4 pt-4">
+<div class="relative flex min-h-[420px] w-full flex-col justify-end overflow-hidden rounded-xl bg-gray-200 shadow-lg" data-alt="Luxurious modern swimming pool with crystal clear blue water and elegant tiling" style="background-image: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 40%, rgba(0,0,0,0.8) 100%), url('https://lh3.googleusercontent.com/aida-public/AB6AXuDAIQfosIEdrBIPxhlHXSufxkEl5oht57EUhmVNXm8_YE-95LKp9lXWJzVzB2-4TntXQigO7HaeelpOAC9NaqacpFwZsgqAFIAFo15ZmK2c5M2ILDILpIaQIV_qxUrQh3DgAA7WuBhIAM5aDSCw9q8OXOOHtwQH5eC2JdGI4JiXZk2EKb_966NwRxHa6LY2W_VmIniaN4x7xZakdfTkx9qmdtvLRCsCbUD6Cdb1h1Q3f7mU-P54Yzb28CjoKcgVlAJz8twCrQn_Ts0'); background-size: cover; background-position: center;">
+<div class="relative z-10 flex flex-col gap-3 p-6">
+<span class="inline-flex w-fit items-center rounded-full bg-primary/90 px-3 py-1 text-xs font-bold uppercase tracking-wider text-white backdrop-blur-sm">
+                            Official Distributor
+                        </span>
+<h2 class="text-4xl font-extrabold leading-tight tracking-tight text-white shadow-sm">
+                            European Quality <br/> for Your Pool
+                        </h2>
+<p class="mb-4 text-base font-medium text-gray-100/90 shadow-sm">
+                            Experience luxury with premium equipment from top EU brands.
+                        </p>
+<button class="group flex w-full items-center justify-center gap-2 rounded-lg bg-white px-6 py-3.5 text-base font-bold text-gray-900 transition-transform active:scale-95 shadow-md">
+<span>Explore Catalog</span>
+<span class="material-symbols-outlined text-[20px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Categories Section -->
+<div class="px-4 pt-8">
+<div class="flex items-center justify-between mb-4">
+<h3 class="text-lg font-bold text-gray-900 dark:text-white">Categories</h3>
+<a class="text-sm font-medium text-primary hover:text-blue-600" href="#">View All</a>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<!-- Category 1 -->
+<div class="group relative flex flex-col justify-end overflow-hidden rounded-xl bg-white dark:bg-gray-800 p-4 shadow-sm border border-gray-100 dark:border-gray-700 h-[140px] transition-all hover:shadow-md active:scale-95 cursor-pointer">
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60 z-10"></div>
+<div class="absolute inset-0 z-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Pool pump and filter system equipment" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCj36XyPb7FBVisQEA2HLOHtUiPKEWjLontFt3EAtbicsqYhuaQC8TP-VJ_OzdImnHaHNgR7EffUr-S384ZO4o9PrWnyWIGXRUV1yxbTzlD2JbBmTmkRSEz_A-LuUUcT_DFTZ-0ZIdQl1LKnVFaGX9k6ttVIowr8qBUyMWlcCDD-xDVx6-EYvFpDMllzwrovb3I-o2iDQjWEJ_qhD0l9ELQHrrlcY3w5qeABSgGkWJIK8IpRTuwNiBUw04G_0Mjl34eo7Ei4ratyM0');">
+</div>
+<div class="relative z-20 flex flex-col items-start gap-1">
+<div class="rounded-full bg-white/20 p-1.5 backdrop-blur-md">
+<span class="material-symbols-outlined text-white text-[20px]">water_pump</span>
+</div>
+<span class="font-bold text-white">Equipment</span>
+</div>
+</div>
+<!-- Category 2 -->
+<div class="group relative flex flex-col justify-end overflow-hidden rounded-xl bg-white dark:bg-gray-800 p-4 shadow-sm border border-gray-100 dark:border-gray-700 h-[140px] transition-all hover:shadow-md active:scale-95 cursor-pointer">
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60 z-10"></div>
+<div class="absolute inset-0 z-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Colorful blue glass mosaic tiles texture" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB3XbxrBUPOHi2UZoNRGFObO7Are_GfS8KzPvXbODbjUGFmjUqXNWRb-MVSCC8a3CRVwTXFVA-s6VAde2Wytcp2rCRAjN2wUSgcaBTDdlLfVhrMbi4ivL0fcqEgOKBWyKfCk-LSCGNFSTwmY2tRqILxxGYOK6UaamlJFqo7J7LXV8YYj_mBbb4lm2bmzwd9lATpC7AGknsnJ0vUVfBg4OzO_iC0rn7LwUAc18TbapWmo7SjEGHHOssWzmiVPw3OaeGt-uCQeprHmEg');">
+</div>
+<div class="relative z-20 flex flex-col items-start gap-1">
+<div class="rounded-full bg-white/20 p-1.5 backdrop-blur-md">
+<span class="material-symbols-outlined text-white text-[20px]">grid_view</span>
+</div>
+<span class="font-bold text-white">Mosaic</span>
+</div>
+</div>
+<!-- Category 3 -->
+<div class="group relative flex flex-col justify-end overflow-hidden rounded-xl bg-white dark:bg-gray-800 p-4 shadow-sm border border-gray-100 dark:border-gray-700 h-[140px] transition-all hover:shadow-md active:scale-95 cursor-pointer">
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60 z-10"></div>
+<div class="absolute inset-0 z-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Construction site for a new swimming pool" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCDC6WIhAABnaA_MyKB6KcZddTKo3v0jouSQtESVs5zd45uTF0Wc_6R3luvufVbEgs8_UWDeFtcc8Ms8J0oqlg8v7kPpCB75Y8a_IiOqZVsN4HjntTJGt04OulYqY9yJs9ZhsVee87MyeWZmGE3VuJP2DG9EvCcukExzwSvQZufEEjL9NZpCvJqFrCBicYDAPj4cJl98ioZjZCGlpeSYN0PSGIDSlyWHB43QksiAqwquB_bV3CZ0CHungbvt4Ajb7Y_CS2a4dFYabs');">
+</div>
+<div class="relative z-20 flex flex-col items-start gap-1">
+<div class="rounded-full bg-white/20 p-1.5 backdrop-blur-md">
+<span class="material-symbols-outlined text-white text-[20px]">engineering</span>
+</div>
+<span class="font-bold text-white">Construction</span>
+</div>
+</div>
+<!-- Category 4 -->
+<div class="group relative flex flex-col justify-end overflow-hidden rounded-xl bg-white dark:bg-gray-800 p-4 shadow-sm border border-gray-100 dark:border-gray-700 h-[140px] transition-all hover:shadow-md active:scale-95 cursor-pointer">
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60 z-10"></div>
+<div class="absolute inset-0 z-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Professional pool maintenance service cleaning" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD-7zB5u-1VNBrdpdqCeQXxMsG_N6DLLW9lEXmlmqEsyYLrlcMRemDgT8WmQ25OBPss75Wej8CZ4wzjl1Igez5s6Z2XJU0sYpnwwWcGQPR8L91C6Ct8H8yLM78eq6KYsea6M7295E9JBIwNMiM_2JQ_UKuhajunfc9AVLnTPE9HsM8EEru4q6wc1b-OB54QgGzFnisqxLg1wPIZf8RSerdRvJlJjhY_SlUYH6PMOloZoo0-tygV16J7bar24pl_ojhWarKQgdVug0U');">
+</div>
+<div class="relative z-20 flex flex-col items-start gap-1">
+<div class="rounded-full bg-white/20 p-1.5 backdrop-blur-md">
+<span class="material-symbols-outlined text-white text-[20px]">build_circle</span>
+</div>
+<span class="font-bold text-white">Service</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Request Callback Section -->
+<div class="px-4 py-8">
+<div class="relative overflow-hidden rounded-xl bg-gradient-to-br from-primary to-blue-600 p-6 shadow-md">
+<!-- Abstract Background Pattern -->
+<div class="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-white opacity-10 blur-2xl"></div>
+<div class="absolute -bottom-10 -left-10 h-32 w-32 rounded-full bg-white opacity-10 blur-xl"></div>
+<div class="relative z-10 flex flex-col items-start">
+<div class="mb-3 rounded-full bg-white/20 p-2 backdrop-blur-sm">
+<span class="material-symbols-outlined text-white text-[24px]">support_agent</span>
+</div>
+<h3 class="mb-2 text-xl font-bold text-white">Planning a new project?</h3>
+<p class="mb-5 text-sm font-medium text-blue-100 opacity-90">Talk to our experts for a personalized consultation.</p>
+<button class="w-full rounded-lg bg-white py-3 text-sm font-bold text-primary transition-colors hover:bg-gray-50 active:scale-[0.98] shadow-sm">
+                            Request Callback
+                        </button>
+</div>
+</div>
+</div>
+<!-- Featured Products -->
+<div class="px-4 pb-4">
+<div class="flex items-center justify-between mb-4">
+<h3 class="text-lg font-bold text-gray-900 dark:text-white">Featured Products</h3>
+<div class="flex gap-2">
+<button class="flex h-8 w-8 items-center justify-center rounded-full border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-400 dark:text-gray-500 hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[16px]">arrow_back</span>
+</button>
+<button class="flex h-8 w-8 items-center justify-center rounded-full border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-white hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="flex gap-4 overflow-x-auto no-scrollbar pb-2 -mx-4 px-4 snap-x">
+<!-- Product Card 1 -->
+<div class="min-w-[160px] max-w-[160px] snap-center flex-col gap-3 rounded-lg border border-gray-100 bg-white p-3 shadow-sm dark:border-gray-800 dark:bg-gray-900">
+<div class="relative aspect-square w-full overflow-hidden rounded-md bg-gray-50 dark:bg-gray-800">
+<div class="absolute top-2 left-2 z-10 rounded bg-red-500 px-1.5 py-0.5 text-[10px] font-bold text-white">HOT</div>
+<img alt="Pool Pump" class="h-full w-full object-cover mix-blend-multiply dark:mix-blend-normal" data-alt="High tech pool pump on white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpPnfBTneNSKev7ybS0RkiSYJOVf0f4MrcZeWHdSzFd6cC6iSyZ7qcGzuiqHqd7_qi965QPW6ipR2aaih3q4KNmfFElzWCP1N-kan6Z7hrZWZN7uY2j8dYTGhOi5IKMf8rgSv5HYVZvuNJSTelVvj1cgzYsJSuG3paer_qso6vTjPAQFh1aNvqCkyNtPr5J9gP651TdOyXu-vQJFuK2wNuBpXws7GwBfLncXuKas_f_KB7hvastQzTpXlGUNUsjZce7ySJXJyzz-I"/>
+<button class="absolute bottom-2 right-2 flex h-8 w-8 items-center justify-center rounded-full bg-white shadow-md text-gray-900 hover:bg-gray-50 dark:bg-gray-700 dark:text-white">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+<div class="flex flex-col gap-1">
+<p class="text-xs font-medium text-gray-500 dark:text-gray-400">Pumps</p>
+<h4 class="truncate text-sm font-bold text-gray-900 dark:text-white">AstralPool Victoria</h4>
+<p class="text-sm font-bold text-primary">$420.00</p>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="min-w-[160px] max-w-[160px] snap-center flex-col gap-3 rounded-lg border border-gray-100 bg-white p-3 shadow-sm dark:border-gray-800 dark:bg-gray-900">
+<div class="relative aspect-square w-full overflow-hidden rounded-md bg-gray-50 dark:bg-gray-800">
+<img alt="Pool Robot" class="h-full w-full object-cover mix-blend-multiply dark:mix-blend-normal" data-alt="Pool cleaning robot on white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpTO4FF59MbQv5oBIV6Yg9OTfOXrL8pfeSjbaiplXiCAQrxLiEgX7LdtW3HPEHKuXfKzrCJwUpXHxI-8TraNUKXjjM2alNsP2OM_B3-K5SJArZEighIGXCdf-0BwaSAcR6RbkH8wrptxaW8evfRXYGIk9UjbBOnnx35Hg5VIINstC0DaixR7usiYWHgQp72RCB9tFcwNOv_0J3xhjQ8Si7lvJ1TuQD6jNKwtmsi85LDYxJ0hgVWMwA3hROMVUIgSDvlzLDZV2mZd0"/>
+<button class="absolute bottom-2 right-2 flex h-8 w-8 items-center justify-center rounded-full bg-white shadow-md text-gray-900 hover:bg-gray-50 dark:bg-gray-700 dark:text-white">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+<div class="flex flex-col gap-1">
+<p class="text-xs font-medium text-gray-500 dark:text-gray-400">Cleaners</p>
+<h4 class="truncate text-sm font-bold text-gray-900 dark:text-white">Zodiac MX8 Elite</h4>
+<p class="text-sm font-bold text-primary">$850.00</p>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="min-w-[160px] max-w-[160px] snap-center flex-col gap-3 rounded-lg border border-gray-100 bg-white p-3 shadow-sm dark:border-gray-800 dark:bg-gray-900">
+<div class="relative aspect-square w-full overflow-hidden rounded-md bg-gray-50 dark:bg-gray-800">
+<div class="absolute top-2 left-2 z-10 rounded bg-green-500 px-1.5 py-0.5 text-[10px] font-bold text-white">-10%</div>
+<img alt="Water Filter" class="h-full w-full object-cover mix-blend-multiply dark:mix-blend-normal" data-alt="Water filter cartridge container" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwLEynK7TgyatokST9FpXhSbUs0B5QnFxIwGiDx0cqtzbiFK9w2OYL0aqsJhUbIFjYsrs-0xRHsH0FIs8yCZmYRjXa09uZDBSu44OsmeZA06LaAbJPMdvD8dE1Cc7tFvogHPElreBvrUY2OC8eNkM6puLOKMryjJnqOdScd36_sYPik74Arp20mu5yuo2vBIUKy-U1NIagBWOTlNRgsyBfNykcINf5mgdTz5GsbGS240zSKt-nYHz66mpBzfpdTmBwIRO911qY4t8"/>
+<button class="absolute bottom-2 right-2 flex h-8 w-8 items-center justify-center rounded-full bg-white shadow-md text-gray-900 hover:bg-gray-50 dark:bg-gray-700 dark:text-white">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+<div class="flex flex-col gap-1">
+<p class="text-xs font-medium text-gray-500 dark:text-gray-400">Filters</p>
+<h4 class="truncate text-sm font-bold text-gray-900 dark:text-white">Sand Filter Pro</h4>
+<p class="text-sm font-bold text-primary">$315.00</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 z-40 w-full max-w-[480px] border-t border-gray-100 bg-white pb-safe pt-2 dark:border-gray-800 dark:bg-background-dark">
+<div class="grid h-16 grid-cols-4 items-center justify-items-center">
+<a class="flex flex-col items-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined text-[24px] filled">home</span>
+<span class="text-[10px] font-bold">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined text-[24px]">grid_view</span>
+<span class="text-[10px] font-medium">Catalog</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined text-[24px]">shopping_bag</span>
+<span class="text-[10px] font-medium">Cart</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined text-[24px]">person</span>
+<span class="text-[10px] font-medium">Profile</span>
+</a>
+</div>
+<!-- iOS safe area spacing -->
+<div class="h-6 w-full bg-white dark:bg-background-dark"></div>
+</nav>
+</div>
+</body></html>

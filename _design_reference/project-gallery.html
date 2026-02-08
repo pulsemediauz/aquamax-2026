@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Aquamax Project Gallery</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                        "surface-light": "#ffffff",
+                        "surface-dark": "#1a2632",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        /* Masonry Grid Simulation */
+        .masonry-grid {
+            column-count: 2;
+            column-gap: 1rem;
+        }
+        .masonry-item {
+            break-inside: avoid;
+            margin-bottom: 1rem;
+        }
+        /* Hide scrollbar for horizontal scrolling */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased overflow-x-hidden">
+<div class="relative flex h-full min-h-screen w-full flex-col max-w-md mx-auto bg-surface-light dark:bg-background-dark shadow-2xl overflow-hidden">
+<!-- Header -->
+<header class="sticky top-0 z-20 flex items-center justify-between bg-surface-light/95 dark:bg-background-dark/95 backdrop-blur-md p-4 pb-2 border-b border-gray-100 dark:border-gray-800">
+<h1 class="text-[#111418] dark:text-white text-xl font-bold leading-tight tracking-[-0.015em] flex-1">Project Gallery</h1>
+<div class="flex items-center justify-end gap-3">
+<button class="flex items-center justify-center rounded-full h-10 w-10 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+<span class="material-symbols-outlined text-[24px]">search</span>
+</button>
+<button class="flex items-center justify-center rounded-full h-10 w-10 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+<span class="material-symbols-outlined text-[24px]">notifications</span>
+</button>
+</div>
+</header>
+<!-- Filter Chips -->
+<div class="sticky top-[60px] z-10 bg-surface-light/95 dark:bg-background-dark/95 backdrop-blur-md pt-2 pb-4">
+<div class="flex gap-3 px-4 overflow-x-auto no-scrollbar snap-x">
+<!-- Active Chip -->
+<button class="snap-start flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary px-5 shadow-lg shadow-blue-500/20 transition-transform active:scale-95">
+<span class="text-white text-sm font-bold leading-normal">All</span>
+</button>
+<!-- Inactive Chips -->
+<button class="snap-start flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-slate-100 dark:bg-slate-800 border border-transparent dark:border-slate-700 px-5 transition-colors hover:bg-slate-200 dark:hover:bg-slate-700 active:scale-95">
+<span class="text-slate-700 dark:text-slate-300 text-sm font-medium leading-normal whitespace-nowrap">Private Pools</span>
+</button>
+<button class="snap-start flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-slate-100 dark:bg-slate-800 border border-transparent dark:border-slate-700 px-5 transition-colors hover:bg-slate-200 dark:hover:bg-slate-700 active:scale-95">
+<span class="text-slate-700 dark:text-slate-300 text-sm font-medium leading-normal whitespace-nowrap">Public Pools</span>
+</button>
+<button class="snap-start flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-slate-100 dark:bg-slate-800 border border-transparent dark:border-slate-700 px-5 transition-colors hover:bg-slate-200 dark:hover:bg-slate-700 active:scale-95">
+<span class="text-slate-700 dark:text-slate-300 text-sm font-medium leading-normal whitespace-nowrap">Custom Mosaic</span>
+</button>
+<button class="snap-start flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-slate-100 dark:bg-slate-800 border border-transparent dark:border-slate-700 px-5 transition-colors hover:bg-slate-200 dark:hover:bg-slate-700 active:scale-95">
+<span class="text-slate-700 dark:text-slate-300 text-sm font-medium leading-normal whitespace-nowrap">Indoor</span>
+</button>
+</div>
+</div>
+<!-- Masonry Grid Content -->
+<div class="flex-1 px-4 pb-24">
+<div class="masonry-grid">
+<!-- Card 1 -->
+<div class="masonry-item relative group overflow-hidden rounded-xl bg-slate-200 dark:bg-slate-800">
+<img alt="Luxury infinity pool overlooking the ocean at sunset" class="w-full h-auto object-cover transform transition-transform duration-500 group-hover:scale-105" data-alt="Luxury infinity pool overlooking the ocean at sunset" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1WSnDvZ7I5oa1DINyJSCTiUYfchE1XTKPRtHZtq1EQmrkbgqSlO5MEU_i4vTmCYAYxMLJzMZehS0X6bg-dJulJy2kofh7p_F2glIHIknMXJjRog-egg1299q6PxBFinwg1h1c_RGAaspiLVrQ68_cgM9KWaucLeGMf-dbCOivAY9Z09zbzSg76VS52qU7Sq77_v8e0sKmNN_4ykWCxBcyVlAA9sSjGiEhWdhOtkN7uOqj5Yim8vmOoZNBI1sgRfizszA09nferZQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-90"></div>
+<div class="absolute top-3 right-3 bg-white/20 backdrop-blur-md rounded-lg px-2 py-1 flex items-center gap-1 border border-white/10">
+<span class="material-symbols-outlined text-white text-[14px]">location_on</span>
+<span class="text-white text-[10px] font-bold uppercase tracking-wider">Dubai</span>
+</div>
+<div class="absolute bottom-0 left-0 p-4 w-full">
+<span class="inline-block px-2 py-0.5 rounded-md bg-primary/90 text-white text-[10px] font-bold mb-1">Infinity</span>
+<h3 class="text-white text-sm font-bold leading-tight">Villa Al-Hamra</h3>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="masonry-item relative group overflow-hidden rounded-xl bg-slate-200 dark:bg-slate-800">
+<img alt="Modern geometric swimming pool with custom blue mosaic tiles" class="w-full h-auto object-cover transform transition-transform duration-500 group-hover:scale-105" data-alt="Modern geometric swimming pool with custom blue mosaic tiles" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLTA-mPUWAuAHDX1ZuY15lwx_Hhx3MiEjMNiPDVCLkT1d3PPSOdWjHaG-pSEDmlrstP9xwQgJ0_TrQv7dZ4XlBqwEyYdZde6unbbMTiCtwElPBlsTl1qbPBaQCso0js2nLUfb8nA3IpU3ShUG6DgSpcF1RiEapS2bQ-Qz1zCK3_7R8wScYTYwni7smyHjvrtr4JWdejK5KBMtCRLCh2mrmvj-5tzHEBtK-Jehkijv5lPC087naIcnjkPGYpP3gZWcArTx5-yp4HkI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80"></div>
+<div class="absolute bottom-0 left-0 p-4 w-full">
+<span class="inline-block px-2 py-0.5 rounded-md bg-emerald-500/90 text-white text-[10px] font-bold mb-1">Mosaic</span>
+<h3 class="text-white text-sm font-bold leading-tight">Azure Geometric</h3>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="masonry-item relative group overflow-hidden rounded-xl bg-slate-200 dark:bg-slate-800">
+<img alt="Indoor luxury pool with warm lighting and stone deck" class="w-full h-auto object-cover transform transition-transform duration-500 group-hover:scale-105" data-alt="Indoor luxury pool with warm lighting and stone deck" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmwAGLkzBJuQ4nwSTIAN6BWDO87cx6nESZuZ3DdHcRVbxUqw8JbY2x2YxmjqOawbO39U_WXg1ziEj6G6ne9KJ8Xd55IDV_hBnmihEZzH6Mi8UH8B6439Vx6YxSOXFK5RC5qNcgLPr0HONfVQ4ppF97kIU1_XU61exq7TZ-j8Ls9PgdAocZl_8weXxqBomJsrzTf9P4x7hifxyR9APf14RAPMIb6v0akClUkUntWK1oxEgg_qRql3J0Jp7beZGVCpZKSWkLYW_1wRs"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent opacity-90"></div>
+<div class="absolute top-3 right-3 bg-white/20 backdrop-blur-md rounded-lg px-2 py-1 flex items-center gap-1 border border-white/10">
+<span class="material-symbols-outlined text-white text-[14px]">location_on</span>
+<span class="text-white text-[10px] font-bold uppercase tracking-wider">London</span>
+</div>
+<div class="absolute bottom-0 left-0 p-4 w-full">
+<span class="inline-block px-2 py-0.5 rounded-md bg-purple-500/90 text-white text-[10px] font-bold mb-1">Indoor</span>
+<h3 class="text-white text-sm font-bold leading-tight">Kensington Spa</h3>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="masonry-item relative group overflow-hidden rounded-xl bg-slate-200 dark:bg-slate-800">
+<img alt="Large resort pool with palm trees and lounge chairs" class="w-full h-auto object-cover transform transition-transform duration-500 group-hover:scale-105" data-alt="Large resort pool with palm trees and lounge chairs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzCnvl2GIkS_a39HHIy9oj3mlxD3aXhuvhNKZhwToT6emo0NsMsxfm9uscfDPK5YzwyFT5yGm6Eo053W_0810l_XmVjXx8QTbu9Pl6RrdTTxPpfL8rCB6LXR4IvDzzf_Z36vspS3eQvQjqB77c8Atwai1LUZMY1jcQhP14HMTtt_Qxy2wspLZz6N5c-8luMWKAWzvIGikT8W_3VeX-kjh9_xYWLr9SzjQSGEShqi4i2GGHeYm0HHs19GCPP9WrJwQ5icwVqKdo4Eo"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80"></div>
+<div class="absolute bottom-0 left-0 p-4 w-full">
+<span class="inline-block px-2 py-0.5 rounded-md bg-orange-500/90 text-white text-[10px] font-bold mb-1">Resort</span>
+<h3 class="text-white text-sm font-bold leading-tight">Oasis Public</h3>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="masonry-item relative group overflow-hidden rounded-xl bg-slate-200 dark:bg-slate-800">
+<img alt="Minimalist rectangular pool in a modern backyard garden" class="w-full h-auto object-cover transform transition-transform duration-500 group-hover:scale-105" data-alt="Minimalist rectangular pool in a modern backyard garden" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJAFyrEPZo3TDUQiY4VvHWDlYac23S7AClySmGwuU16AlBJlbx-iZuuv6bfwIu7fFPFkEBcdiOTDegQ71osihN_EVGdCMVoF9einnZOgmWDzHRonvMUFJGhvM1RZlVGKMgJK92uKd08yFNq0250oSxMZ1GmzwansBdZS_HjXqrFmbCMve6MutMm9k-e_En_yatnTcPcFQsBrOr7dudkDUe8al6ejBbOw9fUlpign2_FujBsi2ygLPQSsjMQF_9qNXvD49Qtte9JRU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent opacity-90"></div>
+<div class="absolute top-3 right-3 bg-white/20 backdrop-blur-md rounded-lg px-2 py-1 flex items-center gap-1 border border-white/10">
+<span class="material-symbols-outlined text-white text-[14px]">location_on</span>
+<span class="text-white text-[10px] font-bold uppercase tracking-wider">Malibu</span>
+</div>
+<div class="absolute bottom-0 left-0 p-4 w-full">
+<span class="inline-block px-2 py-0.5 rounded-md bg-primary/90 text-white text-[10px] font-bold mb-1">Private</span>
+<h3 class="text-white text-sm font-bold leading-tight">Seaside Estate</h3>
+</div>
+</div>
+<!-- Card 6 -->
+<div class="masonry-item relative group overflow-hidden rounded-xl bg-slate-200 dark:bg-slate-800">
+<img alt="Detail shot of water rippling over blue pool tiles" class="w-full h-auto object-cover transform transition-transform duration-500 group-hover:scale-105" data-alt="Detail shot of water rippling over blue pool tiles" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOpnHkmAkeDH6dwcBWaV7-kek6A4XJ3ml1E67GcFxdjbrrJCKua3k_U0dmMy_qku34Y9w4ABvZZq0RG8fWFaDwbNTnOlAqjTlINeiuCZfk_lIbrHVQEuqZWmRZzcDwG_bJP24pIMwdlBBmkOHRIpzA8oNRdBThF463jqPm13wO7EzsOO5EhhIld0-8LP8aWFEcVBpnfXCs0pzxTgs3SXNYpC3lecIWYsrMziriM30gVS7SNkrGC9k-NLaulMqsBIe5tBKxBqcJ0cI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80"></div>
+<div class="absolute bottom-0 left-0 p-4 w-full">
+<span class="inline-block px-2 py-0.5 rounded-md bg-teal-500/90 text-white text-[10px] font-bold mb-1">Detail</span>
+<h3 class="text-white text-sm font-bold leading-tight">Mosaic Pattern 4</h3>
+</div>
+</div>
+</div>
+</div>
+<!-- Simulated "Bottom Sheet" / Detail View Triggered State (Visual representation) -->
+<div class="fixed inset-0 z-50 flex flex-col justify-end pointer-events-none">
+<!-- Backdrop (simulated visibility for demo) -->
+<!-- <div class="absolute inset-0 bg-black/60 pointer-events-auto opacity-0"></div> -->
+<!-- Floating FAB for New Inquiry -->
+<button class="pointer-events-auto absolute bottom-24 right-4 h-14 w-14 rounded-full bg-primary text-white shadow-xl shadow-primary/40 flex items-center justify-center hover:bg-blue-600 transition-colors">
+<span class="material-symbols-outlined text-[28px]">add</span>
+</button>
+<!-- Bottom Navigation Bar -->
+<nav class="pointer-events-auto bg-surface-light dark:bg-surface-dark border-t border-slate-100 dark:border-slate-800 pb-safe pt-2 px-2">
+<div class="flex justify-around items-end">
+<a class="flex flex-col items-center gap-1 p-2 text-slate-400 dark:text-slate-500 hover:text-primary dark:hover:text-primary transition-colors group" href="#">
+<span class="material-symbols-outlined text-[24px] group-hover:-translate-y-1 transition-transform">home</span>
+<span class="text-[10px] font-medium">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 p-2 text-primary" href="#">
+<span class="material-symbols-outlined text-[24px] fill-current">photo_library</span>
+<span class="text-[10px] font-medium">Gallery</span>
+</a>
+<a class="flex flex-col items-center gap-1 p-2 text-slate-400 dark:text-slate-500 hover:text-primary dark:hover:text-primary transition-colors group" href="#">
+<span class="material-symbols-outlined text-[24px] group-hover:-translate-y-1 transition-transform">water_drop</span>
+<span class="text-[10px] font-medium">Products</span>
+</a>
+<a class="flex flex-col items-center gap-1 p-2 text-slate-400 dark:text-slate-500 hover:text-primary dark:hover:text-primary transition-colors group" href="#">
+<span class="material-symbols-outlined text-[24px] group-hover:-translate-y-1 transition-transform">contact_support</span>
+<span class="text-[10px] font-medium">Contact</span>
+</a>
+</div>
+<!-- Safe area spacing for iOS home indicator -->
+<div class="h-5"></div>
+</nav>
+</div>
+<!-- Example of Detail Modal (Hidden by default in flow, but coded here as if popped up to show UI) -->
+<!-- In a real app this would be toggled. Here I'll render a 'card' that looks like an open bottom sheet for demonstration if desired, but following user request for a "Single page", I will keep the main gallery active and overlay a partial sheet to show the "Detail View" interaction concept. -->
+<div class="absolute inset-0 z-40 bg-black/30 backdrop-blur-[2px] pointer-events-none hidden"> <!-- Remove 'hidden' to see the modal state --> </div>
+<div class="absolute bottom-0 left-0 right-0 z-50 transform translate-y-[100%] transition-transform duration-300 ease-out bg-surface-light dark:bg-surface-dark rounded-t-3xl shadow-2xl h-[85vh] flex flex-col overflow-hidden pointer-events-auto" style="transform: translateY(110%);"> <!-- Set translateY(5%) to simulate open state -->
+<!-- Drag Handle -->
+<div class="flex justify-center pt-3 pb-1">
+<div class="w-12 h-1.5 rounded-full bg-slate-300 dark:bg-slate-600"></div>
+</div>
+<!-- Image Header -->
+<div class="relative h-64 shrink-0 bg-slate-200">
+<img alt="Detail view of infinity pool" class="w-full h-full object-cover" data-alt="Detail view of infinity pool" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDlmt-nLV91Bau0TDS_eo3ZYtdTdiWT207uiz5MkK_LggaznG1e1WMLA3nv3oweYjn6Ug1a-y169VjGy0Y9dV-PvpxnVqJ46hkdupym-kh27MKVm0x09zwuyZ3ApU7wv7uhLyozhGAIwGyY8cTLBDjbNNlqxpzlf26WlsfNjHaaENknkq0p8HVfxl3MBLBU633OjeRM1WWvk-WkOS16SDiY2BEQUSVb4PL4myNzfNRmdXo1cPuxW5jN-9SHfH-qSBhhE8t296daSs"/>
+<button class="absolute top-4 right-4 bg-white/30 backdrop-blur-md rounded-full p-2 text-white hover:bg-white/40">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<!-- Content -->
+<div class="flex-1 overflow-y-auto p-6">
+<div class="flex justify-between items-start mb-2">
+<div>
+<h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-1">Villa Al-Hamra</h2>
+<div class="flex items-center text-slate-500 dark:text-slate-400 text-sm">
+<span class="material-symbols-outlined text-[18px] mr-1">location_on</span>
+                            Palm Jumeirah, Dubai
+                        </div>
+</div>
+<span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-bold uppercase">Private</span>
+</div>
+<p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-6 mt-4">
+                     A stunning infinity edge pool designed to blend seamlessly with the Arabian Gulf horizon. Features premium glass mosaic tiling and our signature whisper-quiet filtration system.
+                 </p>
+<div class="space-y-4">
+<h3 class="text-sm font-bold text-slate-900 dark:text-white uppercase tracking-wider border-b border-slate-100 dark:border-slate-700 pb-2">Technical Specs</h3>
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-lg bg-blue-50 dark:bg-blue-900/20 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined">grid_on</span>
+</div>
+<div>
+<p class="text-sm font-bold text-slate-900 dark:text-white">Ezarri Iris Glass Mosaic</p>
+<p class="text-xs text-slate-500 dark:text-slate-400">Iridescent Pearl Finish, 25mm</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-lg bg-blue-50 dark:bg-blue-900/20 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined">settings</span>
+</div>
+<div>
+<p class="text-sm font-bold text-slate-900 dark:text-white">Aquamax Pro Inverter</p>
+<p class="text-xs text-slate-500 dark:text-slate-400">Variable speed heat pump, 24kW</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer CTA -->
+<div class="p-4 border-t border-slate-100 dark:border-slate-800 bg-surface-light dark:bg-surface-dark pb-8">
+<button class="w-full bg-primary hover:bg-blue-600 text-white font-bold py-3.5 px-4 rounded-xl flex items-center justify-center gap-2 transition-colors shadow-lg shadow-blue-500/25">
+<span>Request Quote for Similar Project</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</body></html>

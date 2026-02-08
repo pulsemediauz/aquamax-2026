@@ -1,0 +1,206 @@
+{
+    "nav": {
+        "home": "Bosh sahifa",
+        "catalog": "Katalog",
+        "cart": "Savatcha",
+        "profile": "Profil",
+        "not_found": {
+            "title": "Sahifa topilmadi",
+            "message": "Kechirasiz, siz qidirayotgan sahifani topa olmadik.",
+            "button": "Bosh sahifaga"
+        },
+        "services": "Xizmatlar",
+        "projects": "Loyihalar"
+    },
+    "loader": {
+        "text": "ORZUYINGIZDAGI HOVUZGA EGA BO'LING"
+    },
+    "home": {
+        "hero": {
+            "badge": "Rasmiy Distribyutor",
+            "title": "Yevropa Sifati <br/> Hovuzingiz Uchun",
+            "subtitle": "Yevropaning eng yaxshi brendlarining premium uskunalari bilan hashamatni his eting.",
+            "cta": "Katalogga o'tish"
+        },
+        "categories": {
+            "title": "Kategoriyalar",
+            "view_all": "Barchasi",
+            "equipment": "Uskunalar",
+            "mosaic": "Mozayka",
+            "construction": "Qurilish",
+            "service": "Xizmat ko'rsatish"
+        },
+        "callback": {
+            "title": "Yangi loyiha rejalashtiryapsizmi?",
+            "text": "Shaxsiy maslahat olish uchun mutaxassislarimiz bilan gaplashing.",
+            "button": "Qo'ng'iroq buyurtma qilish"
+        },
+        "featured": {
+            "title": "Ommabop mahsulotlar"
+        }
+    },
+    "catalog": {
+        "title": "Aquamax Katalogi",
+        "search_placeholder": "Nasoslar, filtrlarni qidirish...",
+        "filters": {
+            "all": "Barchasi",
+            "pumps": "Nasoslar",
+            "filters": "Filtrlar",
+            "heating": "Isitish",
+            "chemistry": "Kimyo",
+            "lighting": "Yoritish",
+            "robots": "Robotlar"
+        }
+    },
+    "cart": {
+        "title": "Savatcha",
+        "clear": "Tozalash",
+        "empty": "Savatchangiz bo'sh",
+        "upsell": {
+            "installation": "Professional o'rnatish",
+            "warranty": "Sozlash + kafolat"
+        },
+        "suggestions": "Sizga kerak bo'lishi mumkin",
+        "summary": {
+            "title": "Buyurtma jami",
+            "subtotal": "Oraliq jami",
+            "installation": "O'rnatish",
+            "shipping": "Yetkazib berish",
+            "free": "Bepul",
+            "tax": "Soliq",
+            "total": "Jami"
+        },
+        "checkout": "Rasmiylashtirish",
+        "secure": "Xavfsiz to'lov"
+    },
+    "product": {
+        "title": "Mahsulot Tafsilotlari",
+        "reviews": "({{count}})",
+        "add_to_cart": "Savatchaga qo'shish",
+        "buy_now": "Sotib olish",
+        "features": "Xususiyatlari",
+        "tabs": {
+            "description": "Tavsif",
+            "specs": "Xususiyatlar",
+            "reviews": "Sharhlar"
+        },
+        "related": "O'xshash mahsulotlar",
+        "view_all": "Barchasi"
+    },
+    "services": {
+        "title": "Xizmat turlari",
+        "categories": {
+            "equipment": "Yevropa uskunalari",
+            "mosaic": "Maxsus mozayka",
+            "construction": "Hovuz qurilishi",
+            "maintenance": "Xizmat ko'rsatish"
+        },
+        "construction": {
+            "title": "Hovuz qurilishi",
+            "hero_title": "Orzuyingizdagi vohani quramiz",
+            "hero_subtitle": "Dizayndan tortib birinchi cho'milishgacha premium qurilish.",
+            "cta": "Loyihani boshlash",
+            "stats": {
+                "years": "Yillik tajriba",
+                "projects": "Loyihalar",
+                "satisfaction": "Mamnuniyat"
+            },
+            "portfolio": "Bizning durdonalarimiz",
+            "phases": {
+                "title": "Qurilish bosqichlari",
+                "design": "Maslahat va Dizayn",
+                "excavation": "Qazish va Struktura",
+                "systems": "Tizimlar va Santexnika",
+                "finishing": "Yakuniy ishlar"
+            },
+            "form": {
+                "title": "Tashrif buyurtma qilish",
+                "subtitle": "Loyihangiz uchun bepul o'lchov va smeta.",
+                "name": "F.I.Sh",
+                "address": "Manzil",
+                "phone": "Telefon raqam",
+                "date": "Qulay sana",
+                "submit": "Tashrif buyurtma qilish",
+                "success_title": "Buyurtma qabul qilindi!",
+                "success_message": "Tez orada tashrifni tasdiqlash uchun siz bilan bog'lanamiz."
+            }
+        },
+        "maintenance": {
+            "title": "Xizmat va Ta'mirlash",
+            "subtitle": "Aquamax Premium Parvarish",
+            "vacuuming": "Standart tozalash",
+            "chemical": "Kimyoviy balans",
+            "diagnostics": "Tizim diagnostikasi",
+            "book": "Buyurtma berish",
+            "quote": "Smeta olish",
+            "calendar_title": "Tashrifni rejalashtirish"
+        },
+        "mosaic": {
+            "title": "Mozayka ishlab chiqarish",
+            "hero_title": "Italiya texnologiyasi",
+            "hero_subtitle": "Chidamlilikning yangi standarti.",
+            "collections": "Italiya to'plamlari",
+            "durability": "A'lo darajadagi chidamlilik",
+            "order": "Maxsus mozayka buyurtma qilish"
+        }
+    },
+    "about": {
+        "title": "Aquamax Haqida",
+        "hero_title": "Mukammal Suv <br/>Yaratamiz",
+        "since": "{{year}} yildan beri",
+        "story": {
+            "title": "Bizning Tariximiz",
+            "text": "2012 yilda tashkil etilgan Aquamax sizning hovlingizga Yevropa muhandislik standartlarini olib keladi."
+        },
+        "values": {
+            "title": "Asosiy Qadriyatlar",
+            "quality": "Murosasiz Sifat",
+            "standards": "Yevropa Standartlari",
+            "reliability": "Ishonchlilik"
+        },
+        "distributor": "Rasmiy Distribyutor",
+        "team": "Mutaxassislarimiz"
+    },
+    "contact": {
+        "title": "Bog'lanish",
+        "hero_title": "Qanday yordam bera olamiz?",
+        "hero_subtitle": "Biz sizning hovuz qurilish va xizmat ko'rsatish ehtiyojlaringizga yordam berishga tayyormiz.",
+        "support": "Qo'ng'iroq qilish",
+        "whatsapp": "WhatsApp",
+        "telegram": "Telegram",
+        "showroom": "Showroomimizga tashrif buyuring",
+        "hours": "Ish vaqti",
+        "email": "Bizga yozing",
+        "form": {
+            "title": "Xabar yuborish",
+            "name": "Ismingiz",
+            "subject": "Mavzu",
+            "message": "Xabar",
+            "submit": "Yuborish",
+            "success_title": "Xabar yuborildi!",
+            "success_message": "Biz bilan bog'langaningiz uchun tashakkur. Tez orada javob beramiz."
+        }
+    },
+    "showroom": {
+        "title": "Bizning Showroomlar",
+        "intro": "Keyingi loyihangizni ilhomlantirish uchun mo'ljallangan premium maydonlarimizni kashf eting.",
+        "virtual_tour": "Virtual Sayohat",
+        "map": "Xaritada ko'rish",
+        "open": "Ochiq"
+    },
+    "gallery": {
+        "title": "Loyihalar Galereyasi",
+        "filters": {
+            "all": "Barchasi",
+            "private": "Xususiy hovuzlar",
+            "public": "Jamoat hovuzlari",
+            "mosaic": "Mozayka",
+            "indoor": "Yopiq hovuzlar"
+        },
+        "details": {
+            "location": "Manzil",
+            "specs": "Texnik xususiyatlar",
+            "request": "O'xshash loyiha buyurtma qilish"
+        }
+    }
+}
